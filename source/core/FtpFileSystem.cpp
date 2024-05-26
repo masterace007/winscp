@@ -4423,7 +4423,7 @@ bool __fastcall TFTPFileSystem::HandleListData(const wchar_t * Path,
         }
         catch(...)
         {
-          // ignore permissions errors with FTP
+          // ignore permission errors with FTP
         }
 
         File->HumanRights = Entry->HumanPerm;
