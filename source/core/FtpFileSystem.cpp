@@ -3071,7 +3071,7 @@ void __fastcall TFTPFileSystem::DoWaitForReply(unsigned int & ReplyToAwait, bool
   catch(...)
   {
     // even if non-fatal error happens, we must process pending message,
-    // so that we "eat" the reply message, so that it gets not mistakenly
+    // so that we "eat" the reply message, and it doesn't get mistakenly
     // associated with future connect
     if (FTerminal->Active)
     {
