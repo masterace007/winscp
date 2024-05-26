@@ -4529,7 +4529,7 @@ bool __fastcall TFTPFileSystem::HandleReply(int Command, unsigned int Reply)
     }
 
     // reply with Command 0 is not associated with current operation
-    // so do not treat is as a reply
+    // so do not treat it as a reply
     // (it is typically used asynchronously to notify about disconnects)
     if (Command != 0)
     {
